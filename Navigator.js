@@ -2,12 +2,14 @@ import { StackNavigator, TabNavigator, addNavigationHelpers } from 'react-naviga
 import Todos from './Todos'
 import App from './App'
 import A from './A'
+import B from './B'
 import { connect } from 'react-redux'
 import React from 'react'
 
 const Stack = StackNavigator({
   Home: { screen: App },
-  A: { screen: A }
+  A: { screen: A },
+  B: { screen: B }
 })
 
 const Stack2 = StackNavigator({

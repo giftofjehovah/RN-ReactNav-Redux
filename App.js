@@ -11,6 +11,7 @@ const App = props => {
   // const buttonOnPress = () => dispatch(addTodo())
   // const buttonOnPress = () => navigate('Todos')
   const buttonOnPress = () => dispatch(NavigationActions.navigate({ routeName: 'A' }))
+  console.log('rendering Home')
   return (
     <View>
       <TextInput

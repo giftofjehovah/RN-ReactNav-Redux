@@ -5,11 +5,12 @@ import { connect } from 'react-redux'
 
 const A = props => {
   const { dispatch, state } = props
-  const buttonOnPress = () => dispatch(NavigationActions.navigate({ routeName: 'A' }))
+  const buttonOnPress = () => dispatch(NavigationActions.navigate({ routeName: 'B' }))
+  console.log('rendering A')
   return (
     <View>
-      <Text>Bye</Text>
-      <Button onPress={buttonOnPress} title={'A Again'} />
+      <Text>This is A</Text>
+      <Button onPress={buttonOnPress} title={'Go to B'} />
     </View>
   )
 }
